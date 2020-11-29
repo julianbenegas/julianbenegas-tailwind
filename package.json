@@ -1,9 +1,9 @@
 {
-  "name": "next-typescript",
+  "name": "julianbenegas-tailwind",
   "version": "0.1.0",
   "description": "A boilerplate for using NextJS with Typescript",
-  "repository": "https://github.com/basementstudio/next-typescript",
-  "author": "Basement",
+  "repository": "https://github.com/julianbenegas/julianbenegas-tailwind",
+  "author": "Julián Benegas",
   "private": true,
   "scripts": {
     "dev": "next",
@@ -13,9 +13,16 @@
     "lint": "eslint . --ext ts --ext tsx --ext js"
   },
   "dependencies": {
-    "next": "^9.5.3",
-    "react": "latest",
-    "react-dom": "latest"
+    "@mdx-js/loader": "^1.6.21",
+    "@next/mdx": "^10.0.3",
+    "autoprefixer": "9.8.6",
+    "clsx": "^1.1.1",
+    "next": "^10.0.3",
+    "postcss": "^8.1.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
     "@types/node": "^14.0.27",
@@ -75,6 +82,12 @@
       "@typescript-eslint/no-use-before-define": 0,
       "@typescript-eslint/ban-ts-comment": 0,
       "react-hooks/exhaustive-deps": "warn",
+      "react/jsx-no-target-blank": [
+        "error",
+        {
+          "allowReferrer": true
+        }
+      ],
       "curly": [
         "error",
         "multi-line"
